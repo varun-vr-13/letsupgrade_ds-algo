@@ -1,0 +1,38 @@
+1.) Find the time complexity for the following scenarios
+
+
+a.) 	for(i=1;i<=n;i++)   			-->Loop runs n times TC: O(n)
+		for(j=i;j<=n;j++)		
+			printf("Hi");
+
+
+second loop
+  i            j
+------      -------
+1              n  
+2              n-1
+3              n-2
+.		.
+.		.
+
+total=n+n-1+n-2 ....
+t(n)=o(n)
+total tc=o(n*n)
+tc=o(n^2)
+
+b.) 	for(i=1;i<=n;i*=3)
+		for(j=1;j<=n;j++)       	-->Loop runs for n times TC: O(n)
+			printf("Hello");
+
+in first loop
+  i          j
+------     ------
+1            n
+3	     n
+9  	     n
+27	     n
+total= 1+3+9+27..
+==> 3^0+3^1......+3^logn
+==>TC: O(logn)
+total TC:= O(n*logn)
+TC:== O(nlogn)
